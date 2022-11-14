@@ -2,8 +2,10 @@
 
 ## Front-end
 
-    1. example
-    2. ...
+    1. Alan Figueroa
+    2. Mauro Ciappina
+    3. Agustin Ramirez
+    4. Ricardo Tortolero
 
 ## Back-end
 
