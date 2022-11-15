@@ -34,10 +34,6 @@ const User = db.define("users", {
 		unique: true,
 		allowNull: false,
 	},
-	birthday: {
-		type: DataTypes.DATEONLY,
-		allowNull: false,
-	},
 	role: {
 		type: DataTypes.STRING,
 		defaultValue: "normal",
