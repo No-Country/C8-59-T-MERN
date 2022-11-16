@@ -10,7 +10,7 @@
 ## Back-end
 
     1. Miguel Vera Perez
-    2. .....
+    2. Fátima Vázquez
 
 ## UX-UI
 
