@@ -13,6 +13,7 @@
     flex-direction:column;
     box-sizing: border-box;
     align-items:center;
+    height: 100vh;
 }
 
 
@@ -36,7 +37,8 @@ video{
     position: absolute;
     right: 0;
     bottom: 0;
-    width:100%;
+    top:0;
+    width:100vh;
     object-fit: contain;
     z-index:-1;
 }       
