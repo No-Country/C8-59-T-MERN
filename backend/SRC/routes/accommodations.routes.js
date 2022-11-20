@@ -18,10 +18,10 @@ const {
   accommodationExistsById,
 } = require("../middlewares/accommodations.middlewares");
 const { reviewExists } = require("../middlewares/reviews.middlewares");
-const {
-  protectSession,
-  protectReviewsOwners,
-} = require("../middlewares/auth.middlewares");
+//const {
+//  protectSession,
+//  protectReviewsOwners,
+//} = require("../middlewares/auth.middlewares");
 const {
   createAccommodationValidators,
 } = require("../middlewares/validators.middlewares");

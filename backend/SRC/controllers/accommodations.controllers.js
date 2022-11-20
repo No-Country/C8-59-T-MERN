@@ -3,7 +3,7 @@ const { Accommodation } = require("../models/accommodation.model");
 const { Review } = require("../models/review.model");
 
 // Utils
-const { catchAsync } = require("../utils/catchAsync.util");
+const { catchAsync } = require("../tools/catchAsync");
 const { AppError } = require("../tools/appError");
 
 const createAccommodation = catchAsync(async (req, res, next) => {
@@ -157,4 +157,3 @@ module.exports = {
   updateReview,
   deleteReview,
 };
-
