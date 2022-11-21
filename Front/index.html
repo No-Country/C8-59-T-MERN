@@ -7,21 +7,49 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     
-    <title>Hello, world!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <title>viaggio</title>
   </head>
   <body>
+ 
+    <!--NavBar-->
+    <section id="menu">
+    <a class="text-start" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        viaggio
+      </a>
+ 
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">viaggio®</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
 <!--Inicio Home-->
 
-    <section id="Home" class="container">
+    <section id="Home" >
+       <!-- <h1>viaggio</h1>-->
     <h1>¿Viajas?</h1>
-    <h2>Sabemos donde te podes quedar</h2>
+ 
 
 
 <form id="FormdestinoHome">
     <div class="search">
-        <input type="text" class="search__input" placeholder="Escribi tu destino...">
+        <input type="text" class="search__input" placeholder="Sabemos donde alojarte...">
         <button class="search__button">
             <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
                 <g>
@@ -34,7 +62,8 @@
     <!--<input id="desde" type="date">
     <input id="hasta" type="date">-->
 </form>
-    <video src="/C8-59-T-MERN/Front/Recursos/Home/HomePhone.mp4" input loop autoplay muted></video>
+<img src="/Front/Recursos/Home/Home.jpg">
+   <!-- <video src="/Front/Recursos/Home/HomePhone.mp4" input loop autoplay muted></video>-->
 </section>
 <!--Fin Home-->
 
