@@ -23,6 +23,20 @@
 #offcanvasExample{
   width:60%;
 }
+
+#menu div div ul li{
+  text-decoration:none;
+}
+
+
+#menu div div ul li a{
+  text-decoration: none;
+
+  color:white;
+  font-size:1rem;
+  width:auto;
+ 
+}
 /*END MENU*/
 
 
