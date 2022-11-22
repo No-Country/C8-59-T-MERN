@@ -6,7 +6,7 @@
 }
 
 /* START MENU */
-#menu a{
+#logo{
   text-decoration: none;
   color:white;
   z-index:1;
@@ -24,17 +24,23 @@
   width:60%;
 }
 
-#menu div div ul li{
-  text-decoration:none;
+#menu_off_canvas ul li{
+  list-style: none;
+  display:block;
+  
+  
 }
 
 
-#menu div div ul li a{
+#menu_off_canvas a{
   text-decoration: none;
-
   color:white;
   font-size:1rem;
-  width:auto;
+  padding:1px 3px 1px 3px;
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+  width:100%;
+  
  
 }
 /*END MENU*/
