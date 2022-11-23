@@ -115,12 +115,15 @@
 
 
 #Home{
+    background: url(../Front/Recursos/Home/Home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
     align-items:center;
     padding:0px;
-    height:100vh;
+    
 }
 
 
@@ -146,7 +149,7 @@ video{
 
     
 }       
-img{
+/*img{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -154,13 +157,14 @@ img{
   width:100vh;
   object-fit: contain;
   z-index:-1;
-}
+}*/
 
 .search {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding-bottom: 15px;
   }
   
   .search__input {
@@ -210,4 +214,11 @@ img{
     fill: #b4b4b4;
   }
 
+  .card-container {
+    padding: 15px;
+  }
+
+  .card-container .card-box {
+    padding-bottom: 15px;
+  }
   /*END HOME*/
