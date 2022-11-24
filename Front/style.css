@@ -44,7 +44,7 @@ body{
   font-family: 'Raleway', sans-serif;
   background: white;
   color:#b22cff;
-  width:60%;
+  width:80%;
 }
 
 #menu_off_canvas a:hover{
@@ -134,7 +134,7 @@ body{
 
 
 #Home h1{
-    color:rgb(255, 255, 255);
+    color:rgb(243, 242, 242);
     position:relative;
     font-size:3rem;
     text-shadow: 1px 1px 5px rgb(121, 121, 121);
