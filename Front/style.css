@@ -271,6 +271,8 @@ video{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    
 
   }
 
@@ -278,6 +280,7 @@ video{
     font-weight: 700;
     padding: 1rem;
     font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
     
   }
 
@@ -358,6 +361,7 @@ border-radius: 0 20%;
 
 .buttom-submmit {
   background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+ 
 
 }
 
@@ -430,12 +434,40 @@ section.pricing {
   margin: 1rem 3rem;
 }
 
-.faq {
 
-}
 
 h6 {
   font-size: 2rem;
   text-align: center;
   text-decoration: uppercase;
 }
+
+.text-tres h3 {
+  color: white !important;
+}
+
+
+.text-seis {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.text-seis h6{
+font-size: 1.6rem;
+text-transform: uppercase;
+font-weight: 600;
+font-family: 'Raleway', sans-serif;
+}
+
+.text-seis p{
+
+ font-weight: 200;
+ font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0 1rem;
+  width: 74%;
+  
+  }
+  
