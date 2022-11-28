@@ -3,6 +3,10 @@
     padding:0px;
     font-size:82,5%;
     box-sizing: border-box;
+    
+}
+body{
+  background-color: #1d1a1a;
 }
 
 
@@ -109,9 +113,7 @@
 
 
 #Home{
-    background: url(../Front/Recursos/Home/Home.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
@@ -122,10 +124,13 @@
 #Home h1{
     color:rgb(243, 242, 242);
     position:relative;
-    font-size:3rem;
+    font-size:3.5rem;
     text-shadow: 1px 1px 5px rgb(121, 121, 121);
-    margin-top:110px;
+    margin-top:250px;
+    
 }
+
+
 
 /*video{
     position: absolute;
@@ -137,7 +142,7 @@
     z-index:-1;
 } */ 
 
-/*img{
+img{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -145,7 +150,7 @@
   width:100vh;
   object-fit: contain;
   z-index:-1;
-}*/
+}
 
 
 
@@ -213,6 +218,11 @@
   .card-container .card-box {
     padding-bottom: 15px;
   }
+
+
+  #search-card{
+    margin-top:600px;
+  }
   /*END HOME*/
 
 
@@ -220,6 +230,7 @@
 
   #nosotros {
     display: flex;
+    flex-direction: column;
     margin: 2rem;
     height: 20%;
     text-align: center;
@@ -283,10 +294,7 @@
     margin-bottom: none;
   }
 
-  .text-center {
-    background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
-  margin-top: 3rem;
-  }
+  
 
   .text-white {
     font-weight: 800;
@@ -331,11 +339,21 @@
     height: 100%;
 }
 
+#Destinos{
+  background-color:#1d1a1a;
+  width:100%;
+  height: 100vh;
+}
 
+#Destinos h3{
+  color:white;
+  background-color:none;
+}
 
-.fotos--destinos{
+#fotos-destinos{
   height: 80vh;
   display: flex;
+  flex-direction:column;
   align-items: center;
 }
 
@@ -346,16 +364,7 @@ color: white;
 border-radius: 0 20%;
 }
 
-.buttom-submmit {
-  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
- 
 
-}
-
-section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-}
 
 .pricing .card {
   border: none;
