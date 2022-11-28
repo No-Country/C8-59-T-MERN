@@ -35,10 +35,13 @@ const showTrips = (miArray) => {
            
            .card-img {
             background-image: url(${el.img});
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 40%;
             width: 100%;
             border-radius: .5rem;
             transition: .3s ease;
+            
            }
            
            .card-info {
