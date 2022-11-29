@@ -356,6 +356,7 @@ img{
   display: flex;
   flex-direction:column;
   align-items: center;
+  width:100%;
 }
 
 .destinos {
@@ -365,7 +366,10 @@ color: white;
 border-radius: 0 20%;
 }
 
-
+.card{
+  width: 100%;
+  margin-top:10px;
+}
 
 
 .pricing .card {
@@ -495,7 +499,7 @@ font-family: 'Raleway', sans-serif;
   }
 
 
-  
+
    
 
   /*HOME*/
