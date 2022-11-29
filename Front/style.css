@@ -468,5 +468,44 @@ font-family: 'Raleway', sans-serif;
   }
   
 
-  /*END HOME*/
+ /*RESPONSIVE TABLET*/
+
+ @media(min-width:767px){
+   /*menu*/
+   #logo{
+    font-size:3rem;
+    padding-left:20px;
+  }
+   
+  #menu_off_canvas a{
+    text-decoration: none;
+    font-size:2rem;
+    padding:1px 3px 1px 3px;
+    width:80%;
+  }
+  
+ 
+  
+  #card_off_canvas{
+    background: rgb(245, 12, 156);}
+  #card_off_canvas p{
+    color:rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size:1.8rem;
+  }
+
+
+  
+   
+
+  /*HOME*/
+   #Home h1{
+    font-size:8rem;
+   }
+ }
+
+
+
+
+
 
