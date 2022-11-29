@@ -366,7 +366,7 @@ color: white;
 border-radius: 0 20%;
 }
 
-.card{
+.card a{
   width: 100%;
   margin-top:10px;
 }
