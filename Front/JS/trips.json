@@ -3,18 +3,28 @@
         "id": 1,
         "city": "Montevideo",
         "country": "Uruguay",
-        "img": "/Front/Recursos/img/caption.jpg"
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
     },
     {
         "id": 2,
         "city": "Buenos Aires",
         "country": "Argentina",
-        "img": "/Front/Recursos/img/caption.jpg"
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
     },
     {
         "id": 3,
         "city": "Rio de Janeiro",
         "country": "Brasil",
-        "img": "/Front/Recursos/img/caption.jpg"
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
+    },
+    {
+        "id": 3,
+        "city": "Rio Grande",
+        "country": "Argentina",
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
     }
 ]
