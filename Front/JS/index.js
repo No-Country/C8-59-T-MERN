@@ -96,6 +96,7 @@ const showTrips = (miArray) => {
            }
            .filtro{
             display:none;
+            
         }
            </style>
         <div id="viajes-search" class="card filtro">
@@ -136,7 +137,7 @@ document.addEventListener("keyup", e=>{
             :destino.classList.add("filtro")
       })
 
-  }
+  } 
 
 
 })
