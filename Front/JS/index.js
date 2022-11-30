@@ -98,7 +98,7 @@ const showTrips = (miArray) => {
             display:none;
         }
            </style>
-        <div id="viajes-search" class="card">
+        <div id="viajes-search" class="card filtro">
         <div class="card-img"></div>
         <div class="card-info">
           <p class="text-title">${el.city} </p>
