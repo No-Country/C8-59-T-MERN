@@ -94,8 +94,11 @@ const showTrips = (miArray) => {
             border: 1px solid #ffcaa6;
             background-color: #ffcaa6;
            }
+           .filtro{
+            display:none;
+        }
            </style>
-        <div class="card">
+        <div id="viajes-search" class="card">
         <div class="card-img"></div>
         <div class="card-info">
           <p class="text-title">${el.city} </p>
@@ -118,3 +121,22 @@ const showTrips = (miArray) => {
     })
 };
 
+//Buscador
+
+document.addEventListener("keyup", e=>{
+
+  if (e.target.matches("#search")){
+
+      if (e.key ==="Escape")e.target.value = ""
+
+      document.querySelectorAll("#viajes-search").forEach(destino =>{
+
+          destino.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?destino.classList.remove("filtro")
+            :destino.classList.add("filtro")
+      })
+
+  }
+
+
+})
