@@ -141,3 +141,10 @@ document.addEventListener("keyup", e=>{
 
 
 })
+
+
+
+//Info para carrito de compras
+
+
+
