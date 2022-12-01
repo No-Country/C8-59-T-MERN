@@ -24,7 +24,7 @@ const showTrips = (miArray) => {
         cardDiv.className = "card-box";
         cardDiv.innerHTML = 
         `<style> .card {
-            width: 190px;
+            width: 300px;
             height: 254px;
             padding: .8em;
             background: #f5f5f5;
