@@ -220,6 +220,39 @@ img{
     padding-bottom: 15px;
   }
 
+  #fechas{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+
+  #desde{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    width: 9em;
+    transition: all ease-in-out .5s;
+
+  }
+
+  #hasta{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    width: 9em;
+    transition: all ease-in-out .5s;
+
+  }
+
   /*END HOME*/
 
 
