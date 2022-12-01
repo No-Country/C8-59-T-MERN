@@ -547,6 +547,37 @@ font-family: 'Raleway', sans-serif;
  }
 
 
+ /* PAGINA NOSOTROS 
+ IMAGEN DE FONDO */
+
+ .nosotros--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ #nosotros--pagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+  width: 80%;
+ }
+
+
+ #Home--nosotros h1 {
+
+ }
+
+ .nosotros--contenedor--pagina{
+  width: 50%;
+
+ 
+ }
+
 
 
 
