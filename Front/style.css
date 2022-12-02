@@ -556,6 +556,12 @@ font-family: 'Raleway', sans-serif;
   object-fit: cover;
  }
 
+ .contacto--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
  #nosotros--pagina {
   display: flex;
   flex-direction: column;
@@ -579,6 +585,25 @@ font-family: 'Raleway', sans-serif;
  }
 
 
+ .footer--position {
+  margin-top: 6.5rem ;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
 
+
+ }
+
+ .container {
+ 
+ }
+
+
+.container--contacto{
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.label {
+  color: none;
+}
 
 
