@@ -23,7 +23,9 @@ const showTrips = (miArray) => {
         let cardDiv = document.createElement("div")
         cardDiv.className = "card-box";
         cardDiv.innerHTML = 
-        `<style> .card {
+        `<style> 
+        #search-card{}
+        .card {
             width: 300px;
             height: 254px;
             padding: .8em;
@@ -128,23 +130,19 @@ document.addEventListener("keyup", e=>{
 
   if (e.target.matches("#search")){
 
-      if (e.key ==="Escape")e.target.value = ""
+      if (e.key === "Backspace"){destino.classList.add("filtro")};
 
       document.querySelectorAll("#viajes-search").forEach(destino =>{
 
           destino.textContent.toLowerCase().includes(e.target.value.toLowerCase())
             ?destino.classList.remove("filtro")
             :destino.classList.add("filtro")
-      })
-
-  } 
-
-
+      }) 
+           
+  }
 })
-
-
+  
+ 
 
 //Info para carrito de compras
-
-
 
