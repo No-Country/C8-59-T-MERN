@@ -48,6 +48,24 @@ body{
   background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
   color:white;
 }
+#card_off_canvasarg{
+  background-image:url(/Front/Recursos/Menu/qatarfifa.jpg);
+  background-position:center;
+  background-size: cover;
+}
+#card_off_canvasarg p{
+  font-size:1.2rem;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  background:rgba(0, 0, 0, 0.644);
+  
+}
+
+#card_off_canvasarg:hover{
+  scale:1.01;
+}
+
+
 
 
 #card_off_canvas{
@@ -266,7 +284,8 @@ img{
 
 #Destinos{
   width:100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-color: rgb(14, 14, 14);
   z-index:1;
 }
