@@ -113,14 +113,18 @@ body{
 
 
 #Home{
-    background-repeat: no-repeat;
+    
+    background-image:url(/Front/Recursos/Home/FondoH.jpg);
+    background-position:center;
+    background-size: cover;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
     align-items:center;
     padding:0px;
     width:100%;
-    height:100vh;
+    min-height:100vh;
+    height:100%;
 }
 
 #Home h1{
@@ -148,7 +152,9 @@ img{
   position: absolute;
   right: 0;
   bottom: 0;
-  width:100vh;
+  min-width:100%;
+  min-height:100vh;
+    height:100%;
   object-fit: contain;
   z-index:-1;
 }

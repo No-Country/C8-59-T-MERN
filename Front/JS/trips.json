@@ -21,7 +21,21 @@
         "price" : "200"
     },
     {
-        "id": 3,
+        "id": 4,
+        "city": "Rio Grande",
+        "country": "Argentina",
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
+    },
+    {
+        "id": 5,
+        "city": "Rio Grande",
+        "country": "Argentina",
+        "img": "/Front/Recursos/img/caption.jpg",
+        "price" : "200"
+    },
+    {
+        "id": 6,
         "city": "Rio Grande",
         "country": "Argentina",
         "img": "/Front/Recursos/img/caption.jpg",
