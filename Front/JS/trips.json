@@ -3,6 +3,9 @@
         "id": 1,
         "city": "Montevideo",
         "country": "Uruguay",
+        "tipodehospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
@@ -10,6 +13,9 @@
         "id": 2,
         "city": "Buenos Aires",
         "country": "Argentina",
+        "tipodehospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
@@ -17,6 +23,9 @@
         "id": 3,
         "city": "Rio de Janeiro",
         "country": "Brasil",
+        "tipo de hospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
@@ -24,6 +33,9 @@
         "id": 4,
         "city": "Rio Grande",
         "country": "Argentina",
+        "tipodehospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
@@ -31,6 +43,9 @@
         "id": 5,
         "city": "Rio Grande",
         "country": "Argentina",
+        "tipodehospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
@@ -38,6 +53,9 @@
         "id": 6,
         "city": "Rio Grande",
         "country": "Argentina",
+        "tipodehospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     }

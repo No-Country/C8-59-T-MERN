@@ -100,12 +100,15 @@ const showTrips = (miArray) => {
             display:none;
             
         }
+        "tipo de hospedaje": "Hotel",
+        "descripcion": "El mejor hotel de la zona",
+        "comodidades": "Pileta, jacuzzi",
            </style>
         <div id="viajes-search" class="card filtro">
         <div class="card-img"></div>
         <div class="card-info">
-          <p class="text-title">${el.city} </p>
-          <p class="text-body">${el.country}</p>
+          <p class="text-title">${el.city} - ${el.country}</p>
+          <p class="text-body">Tipo de hospedaje: ${el.tipodehospedaje} <br> Descripcion: ${el.descripcion} <br> Comodidades:${el.comodidades} </p>
         </div>
         <div class="card-footer">
         <span class="text-title">$ ${el.price}</span>
