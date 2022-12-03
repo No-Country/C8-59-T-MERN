@@ -3,6 +3,7 @@
         "id": 1,
         "city": "Montevideo",
         "country": "Uruguay",
+        "nombreDeHospedaje":"El uno",
         "tipodehospedaje": "Hotel",
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
