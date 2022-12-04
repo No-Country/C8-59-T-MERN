@@ -166,7 +166,7 @@ body{
     z-index:-1;
 } */ 
 
-img{
+.imagen-fondo{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -175,6 +175,12 @@ img{
     height:100%;
   object-fit: contain;
   z-index:-1;
+}
+
+/* SEARCH CARDS */
+
+.card-box {
+  padding: 0.5rem;
 }
 
 
@@ -310,7 +316,7 @@ color: white;
 border-radius: 0 20%;
 }
 
-.card a{
+/*.card a{
   width: 100%;
   margin-top:10px;
 }
@@ -359,11 +365,11 @@ border-radius: 0 20%;
   padding: 1rem;
   opacity: 0.7;
   transition: all 0.2s;
-}
+}*/
 
 /* Hover Effects on Card */
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .pricing .card:hover {
     margin-top: -.25rem;
     margin-bottom: .25rem;
@@ -373,7 +379,7 @@ border-radius: 0 20%;
   .pricing .card:hover .btn {
     opacity: 1;
   }
-}
+}*/
 
 
 .conteiner-faq{
