@@ -1,13 +1,20 @@
 const { User } = require("../models/user.model");
 const { Accommodation } = require("../models/accommodation.model");
 const { Review } = require("../models/review.model");
+const { AccommodationImg } = require("../models/accommodationImg.model");
 
 // Utils
 const { catchAsync } = require("../tools/catchAsync");
 const { AppError } = require("../tools/appError");
 
+const {
+  uploadAccommodationImgs,
+  getAccommodationsImgsUrls,
+  getAccommodationImgsUrlsbyID,
+} = require("../tools/firebase");
+
 const createAccommodation = catchAsync(async (req, res, next) => {
-  //const { sessionUser } = req;
+  const { sessionUser } = req;
   const {
     title,
     description,
@@ -15,7 +22,8 @@ const createAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
-    location,
+    city,
+    country,
     rating,
   } = req.body;
 
@@ -26,13 +34,13 @@ const createAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
-    location,
+    city,
+    country,
     rating,
-    //userId: sessionUser.id,
-    userId: 1,
+    userId: sessionUser.id,
   });
 
-  //await uploadAccommodationImgs(req.files, newAccommodation.id);
+  await uploadAccommodationImgs(req.files, newAccommodation.id);
 
   res.status(201).json({
     status: "success",
@@ -55,31 +63,40 @@ const getAllAccommodations = catchAsync(async (req, res, next) => {
             model: User,
             required: false,
             where: { status: "active" },
-            attributes: { exclude: ["password"] },
+            attributes: ["id", "firstName", "lastName", "country"],
           },
         ],
       },
+      { model: User, attributes: ["id", "firstName", "lastName"] },
+      { model: AccommodationImg },
     ],
   });
 
+  const accommodationsWithImgs = await getAccommodationsImgsUrls(
+    accommodations
+  );
+
   res.status(200).json({
     status: "success",
-    data: { accommodations },
+    data: { accommodations: accommodationsWithImgs },
   });
 });
 
 const getAccommodationById = catchAsync(async (req, res, next) => {
-  const { accommodationById } = req;
+  const { accommodation } = req;
+
+  const accommodationWithImgs = await getAccommodationImgsUrlsbyID(
+    accommodation
+  );
 
   res.status(200).json({
     status: "success",
-    data: { accommodationById },
+    data: { accommodation: accommodationWithImgs },
   });
 });
 
 const updateAccommodation = catchAsync(async (req, res, next) => {
-  const { title, description, rooms, beds, bathrooms, price, location } =
-    req.body;
+  const { title, description, rooms, beds, bathrooms, price } = req.body;
   const { accommodation } = req;
 
   await accommodation.update({
@@ -89,7 +106,6 @@ const updateAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
-    location,
   });
 
   res.status(200).json({
@@ -109,11 +125,10 @@ const deleteAccommodation = catchAsync(async (req, res, next) => {
 const createReview = catchAsync(async (req, res, next) => {
   const { content, rating } = req.body;
   const { accommodation } = req;
-  //const { sessionUser } = req;
+  const { sessionUser } = req;
 
   const newReview = await Review.create({
-    //userId: sessionUser.id,
-    userId: 1,
+    userId: sessionUser.id,
     content,
     rating,
     accommodationId: accommodation.id,

@@ -1,5 +1,4 @@
-const { DataTypes } = require("sequelize");
-const db = require("../tools/database");
+const { DataTypes, db } = require("../tools/database");
 const { Accommodation } = require("./accommodation.model");
 
 const AccommodationImg = db.define("accommodationImg", {
@@ -9,19 +8,12 @@ const AccommodationImg = db.define("accommodationImg", {
     primaryKey: true,
     allowNull: false,
   },
-  name: {
-    type: DataTypes.STRING,
+  imgUrl: {
     allowNull: false,
-  },
-  accommodationUrl: {
     type: DataTypes.STRING,
-    validate: {
-      isUrl: true,
-    },
-    field: "accommodation_url",
   },
   accommodationId: {
-    type: DataTypes.UUID,
+    type: DataTypes.INTEGER,
     allowNull: false,
     references: {
       key: "id",

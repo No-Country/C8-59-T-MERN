@@ -1,11 +1,11 @@
-const { DataTypes } = require("sequelize");
-const db = require("../tools/database");
+const { DataTypes, db } = require("../tools/database");
 
 const User = db.define("user", {
   id: {
-    type: DataTypes.UUID,
-    primaryKey: true,
     allowNull: false,
+    autoIncrement: true,
+    primaryKey: true,
+    type: DataTypes.INTEGER,
   },
   firstName: {
     type: DataTypes.STRING,
@@ -46,13 +46,7 @@ const User = db.define("user", {
     type: DataTypes.STRING,
     allowNull: false,
     defaultValue: "active",
-  },
-  isVerified: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    field: "is_verified",
-    defaultValue: false,
-  },
+  }
 });
 
 module.exports = { User };

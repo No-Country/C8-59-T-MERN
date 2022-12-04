@@ -1,16 +1,16 @@
-const { DataTypes } = require("sequelize");
-const db = require("../tools/database");
+const { DataTypes, db } = require("../tools/database");
 const { Accommodation } = require("./accommodation.model");
 const { User } = require("./user.model");
 
 const Reservation = db.define("reservation", {
   id: {
-    type: DataTypes.UUID,
-    primaryKey: true,
     allowNull: false,
+    autoIncrement: true,
+    primaryKey: true,
+    type: DataTypes.INTEGER,
   },
   userId: {
-    type: DataTypes.UUID,
+    type: DataTypes.INTEGER,
     allowNull: false,
     field: "user_id",
     references: {
@@ -19,7 +19,7 @@ const Reservation = db.define("reservation", {
     },
   },
   accommodationId: {
-    type: DataTypes.UUID,
+    type: DataTypes.INTEGER,
     allowNull: false,
     field: "accommodation_id",
     references: {
@@ -28,24 +28,17 @@ const Reservation = db.define("reservation", {
     },
   },
   arrival: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false,
   },
   departure: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     allowNull: false,
   },
-  isFinished: {
-    type: DataTypes.BOOLEAN,
+  status: {
+    type: DataTypes.STRING,
     allowNull: false,
-    defaultValue: false,
-    field: "is_finished",
-  },
-  isCanceled: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: false,
-    field: "is_canceled",
+    defaultValue: "active",
   },
 });
 

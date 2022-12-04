@@ -2,6 +2,7 @@ const { Review } = require("../models/review.model");
 
 // Utils
 const { catchAsync } = require("../tools/catchAsync");
+const { AppError } = require("../tools/appError");
 
 const reviewExists = catchAsync(async (req, res, next) => {
   const { id } = req.params;
@@ -11,10 +12,7 @@ const reviewExists = catchAsync(async (req, res, next) => {
   });
 
   if (!review) {
-    return res.status(404).json({
-      status: "error",
-      message: "Review not found",
-    });
+    return next(new AppError("Review not found", 404));
   }
 
   req.review = review;

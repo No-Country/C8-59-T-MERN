@@ -1,16 +1,16 @@
-const { DataTypes } = require("sequelize");
-const db = require("../tools/database");
+const { DataTypes, db } = require("../tools/database");
 const { Accommodation } = require("./accommodation.model");
 const { User } = require("./user.model");
 
 const Review = db.define("reviews", {
   id: {
-    type: DataTypes.UUID,
-    primaryKey: true,
     allowNull: false,
+    autoIncrement: true,
+    primaryKey: true,
+    type: DataTypes.INTEGER,
   },
   userId: {
-    type: DataTypes.UUID,
+    type: DataTypes.INTEGER,
     allowNull: false,
     field: "user_id",
     references: {
@@ -19,7 +19,7 @@ const Review = db.define("reviews", {
     },
   },
   accommodationId: {
-    type: DataTypes.UUID,
+    type: DataTypes.INTEGER,
     allowNull: false,
     field: "acommodation_id",
     references: {

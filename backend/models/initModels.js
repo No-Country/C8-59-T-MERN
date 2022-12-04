@@ -30,4 +30,4 @@ const initModels = () => {
   Accommodation.belongsTo(User);
 };
 
-module.exports = initModels;
+module.exports = { initModels };

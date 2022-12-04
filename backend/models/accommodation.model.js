@@ -1,21 +1,21 @@
-const { DataTypes } = require("sequelize");
-const db = require("../tools/database");
-const {User} = require("./user.model");
+const { DataTypes, db } = require("../tools/database");
+const { User } = require("./user.model");
 
 const Accommodation = db.define(
   "accommodation",
   {
     id: {
-      type: DataTypes.UUID,
-      primaryKey: true,
       allowNull: false,
+      autoIncrement: true,
+      primaryKey: true,
+      type: DataTypes.INTEGER,
     },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     rooms: {
@@ -31,10 +31,14 @@ const Accommodation = db.define(
       allowNull: false,
     },
     price: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    city: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    location: {
+    country: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -48,7 +52,7 @@ const Accommodation = db.define(
       type: DataTypes.STRING,
     },
     userId: {
-      type: DataTypes.UUID,
+      type: DataTypes.INTEGER,
       allowNull: false,
       field: "user_id",
       references: {
@@ -57,7 +61,6 @@ const Accommodation = db.define(
       },
     },
   },
-  { timestamps: false }
 );
 
 module.exports = { Accommodation };

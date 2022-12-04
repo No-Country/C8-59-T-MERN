@@ -1,22 +1,21 @@
 const { Accommodation } = require("../models/accommodation.model");
 const { Review } = require("../models/review.model");
 const { User } = require("../models/user.model");
+const { AccommodationImg } = require("../models/accommodationImg.model");
 
 // Utils
 const { catchAsync } = require("../tools/catchAsync");
+const { AppError } = require("../tools/appError");
 
 const accommodationExists = catchAsync(async (req, res, next) => {
-  const { accommodationId } = req.params;
+  const { id } = req.params;
 
   const accommodation = await Accommodation.findOne({
-    where: { id: accommodationId, status: "active" },
+    where: { id, status: "active" },
   });
 
   if (!accommodation) {
-    return res.status(404).json({
-      status: "error",
-      message: "Accommodation not found",
-    });
+    return next(new AppError("Accommodation not found", 404));
   }
 
   req.accommodation = accommodation;
@@ -26,7 +25,7 @@ const accommodationExists = catchAsync(async (req, res, next) => {
 const accommodationExistsById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
 
-  const accommodationById = await Accommodation.findOne({
+  const accommodation = await Accommodation.findOne({
     where: { id, status: "active" },
     required: false,
     include: [
@@ -40,21 +39,20 @@ const accommodationExistsById = catchAsync(async (req, res, next) => {
             model: User,
             required: false,
             where: { status: "active" },
-            attributes: { exclude: ["password"] },
+            attributes: ["id", "firstName", "lastName", "country"],
           },
         ],
       },
+      { model: User, attributes: ["id", "firstName", "lastName"] },
+      { model: AccommodationImg },
     ],
   });
 
-  if (!accommodationById) {
-    return res.status(404).json({
-      status: "error",
-      message: "Accommodation not found",
-    });
+  if (!accommodation) {
+    return next(new AppError("Accommodation not found", 404));
   }
 
-  req.accommodationById = accommodationById;
+  req.accommodation = accommodation;
   next();
 });
 
