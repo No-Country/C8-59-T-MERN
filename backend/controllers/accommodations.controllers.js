@@ -23,6 +23,7 @@ const createAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
+    facilities,
     city,
     country,
     rating,
@@ -35,6 +36,7 @@ const createAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
+    facilities,
     city,
     country,
     rating,
@@ -108,7 +110,8 @@ const getAccommodationById = catchAsync(async (req, res, next) => {
 });
 
 const updateAccommodation = catchAsync(async (req, res, next) => {
-  const { title, description, rooms, beds, bathrooms, price } = req.body;
+  const { title, description, rooms, beds, bathrooms, price, facilities } =
+    req.body;
   const { accommodation } = req;
 
   await accommodation.update({
@@ -118,6 +121,7 @@ const updateAccommodation = catchAsync(async (req, res, next) => {
     beds,
     bathrooms,
     price,
+    facilities,
   });
 
   res.status(200).json({
