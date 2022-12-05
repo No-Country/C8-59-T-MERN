@@ -3,6 +3,10 @@
     padding:0px;
     font-size:82,5%;
     box-sizing: border-box;
+    
+}
+body{
+  background-color: #1d1a1a;
 }
 
 
@@ -37,13 +41,31 @@
   font-family: 'Raleway', sans-serif;
   background: white;
   color:#b22cff;
-  width:100%;
+  width:80%;
 }
 
 #menu_off_canvas a:hover{
   background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
   color:white;
 }
+#card_off_canvasarg{
+  background-image:url(/Front/Recursos/Menu/qatarfifa.jpg);
+  background-position:center;
+  background-size: cover;
+}
+#card_off_canvasarg p{
+  font-size:1.2rem;
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  background:rgba(0, 0, 0, 0.644);
+  
+}
+
+#card_off_canvasarg:hover{
+  scale:1.01;
+}
+
+
 
 
 #card_off_canvas{
@@ -109,23 +131,30 @@
 
 
 #Home{
-    background: url(../Front/Recursos/Home/Home.jpg);
-    background-repeat: no-repeat;
+    
+    background-image:url(/Front/Recursos/Home/FondoH.jpg);
+    background-position:center;
     background-size: cover;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
     align-items:center;
     padding:0px;
+    width:100%;
+    min-height:100vh;
+    height:100%;
 }
 
 #Home h1{
-    color:rgb(255, 255, 255);
+    color:rgb(243, 242, 242);
     position:relative;
-    font-size:3rem;
+    font-size:3.5rem;
     text-shadow: 1px 1px 5px rgb(121, 121, 121);
-    margin-top:110px;
+    margin-top:250px;
+    
 }
+
+
 
 /*video{
     position: absolute;
@@ -137,15 +166,22 @@
     z-index:-1;
 } */ 
 
-/*img{
+.imagen-fondo{
   position: absolute;
   right: 0;
   bottom: 0;
-  top:-180px;
-  width:100vh;
+  min-width:100%;
+  min-height:100vh;
+    height:100%;
   object-fit: contain;
   z-index:-1;
-}*/
+}
+
+/* SEARCH CARDS */
+
+.card-box {
+  padding: 0.5rem;
+}
 
 
 
@@ -167,7 +203,7 @@
     color: #646464;
     padding: 0.7rem 1rem;
     border-radius: 30px;
-    width: 16em;
+    width: 20em;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
   }
@@ -213,15 +249,188 @@
   .card-container .card-box {
     padding-bottom: 15px;
   }
+
+  #fechas{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+
+  #desde{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    width: 9em;
+    transition: all ease-in-out .5s;
+
+  }
+
+  #hasta{
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.5rem 0.5rem;
+    border-radius: 30px;
+    width: 9em;
+    transition: all ease-in-out .5s;
+
+  }
+
   /*END HOME*/
 
+
+/*DESTINOS */
+
+#Destinos{
+  width:100%;
+  min-height:100vh;
+  height:100%;
+  background-color: rgb(14, 14, 14);
+  z-index:1;
+}
+
+#Destinos h2{
+  padding-top:80px;
+  color:rgb(255, 255, 255);
+}
+
+#fotos-destinos{
+  height: 80vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width:100%;
+}
+
+.destinos {
+  font-size: 3rem;
+font-weight: 600;
+color: white;
+border-radius: 0 20%;
+}
+
+/*.card a{
+  width: 100%;
+  margin-top:10px;
+}
+
+
+.pricing .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+  margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.pricing .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.pricing .card-price .period {
+  font-size: 0.8rem;
+}
+
+.pricing ul li {
+  margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+  opacity: 0.7;
+}
+
+.pricing .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}*/
+
+/* Hover Effects on Card */
+
+/*@media (min-width: 992px) {
+  .pricing .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pricing .card:hover .btn {
+    opacity: 1;
+  }
+}*/
+
+
+.conteiner-faq{
+  margin: 1rem 3rem;
+}
+
+
+
+h6 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: uppercase;
+}
+
+.text-tres h3 {
+  color: white !important;
+}
+
+
+.text-seis {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.text-seis h6{
+font-size: 1.6rem;
+text-transform: uppercase;
+font-weight: 600;
+font-family: 'Raleway', sans-serif;
+}
+
+.text-seis p{
+ font-weight: 200;
+ font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 0 1rem;
+  width: 74%;
+  }
+
+
+  /*fin destinos*/
 
   /* NOSOTROS */
 
   #nosotros {
     display: flex;
-    margin: 2rem;
-    height: 20%;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
     text-align: center;
     background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
    
@@ -283,10 +492,7 @@
     margin-bottom: none;
   }
 
-  .text-center {
-    background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
-  margin-top: 3rem;
-  }
+  
 
   .text-white {
     font-weight: 800;
@@ -333,129 +539,98 @@
 
 
 
-.fotos--destinos{
-  height: 80vh;
-  display: flex;
-  align-items: center;
-}
-
-.destinos {
-  font-size: 3rem;
-font-weight: 600;
-color: white;
-border-radius: 0 20%;
-}
-
-.buttom-submmit {
-  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
- 
-
-}
-
-section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-}
-
-.pricing .card {
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-
-.pricing hr {
-  margin: 1.5rem 0;
-}
-
-.pricing .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-}
-
-.pricing .card-price {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.pricing .card-price .period {
-  font-size: 0.8rem;
-}
-
-.pricing ul li {
-  margin-bottom: 1rem;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
-
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
-}
-
-
-.conteiner-faq{
-  margin: 1rem 3rem;
-}
-
-
-
-h6 {
-  font-size: 2rem;
-  text-align: center;
-  text-decoration: uppercase;
-}
-
-.text-tres h3 {
-  color: white !important;
-}
-
-
-.text-seis {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-.text-seis h6{
-font-size: 1.6rem;
-text-transform: uppercase;
-font-weight: 600;
-font-family: 'Raleway', sans-serif;
-}
-
-.text-seis p{
- font-weight: 200;
- font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding: 0 1rem;
-  width: 74%;
-  }
   
 
-  /*END HOME*/
+ /*RESPONSIVE TABLET*/
+
+ @media(min-width:767px){
+   /*menu*/
+   #logo{
+    font-size:3rem;
+    padding-left:20px;
+  }
+   
+  #menu_off_canvas a{
+    text-decoration: none;
+    font-size:2rem;
+    padding:1px 3px 1px 3px;
+    width:80%;
+  }
+  
+ 
+  
+  #card_off_canvas{
+    background: rgb(245, 12, 156);}
+  #card_off_canvas p{
+    color:rgb(255, 255, 255);
+    font-family: 'Raleway', sans-serif;
+    font-size:1.8rem;
+  }
+
+
+
+   
+
+  /*HOME*/
+   #Home h1{
+    font-size:8rem;
+   }
+ }
+
+
+ /* PAGINA NOSOTROS 
+ IMAGEN DE FONDO */
+
+ .nosotros--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ .contacto--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+ #nosotros--pagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+  margin: 2rem 0 3rem 0;
+  text-align: center;
+  width: 80%;
+ }
+
+
+ 
+
+ .nosotros--contenedor--pagina{
+  width: 50%;
+
+ 
+ }
+
+
+ .footer--position {
+  margin-top: 6.5rem ;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+
+
+ }
+
+
+
+
+.container--contacto{
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.label {
+  color: none;
+}
+
 
