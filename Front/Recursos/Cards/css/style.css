@@ -54,3 +54,9 @@ body {
 .filtro{
 	display:none;
 }
+
+
+#viajes-search{
+	box-sizing:border-box;
+
+}

@@ -134,7 +134,7 @@ body{
     
     background-image:url(/Front/Recursos/Home/FondoH.jpg);
     background-position:center;
-    background-size: cover;
+    background-size:auto;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
