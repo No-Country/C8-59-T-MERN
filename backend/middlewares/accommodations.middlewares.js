@@ -2,6 +2,7 @@ const { Accommodation } = require("../models/accommodation.model");
 const { Review } = require("../models/review.model");
 const { User } = require("../models/user.model");
 const { AccommodationImg } = require("../models/accommodationImg.model");
+const { Reservation } = require("../models/reservation.model");
 
 // Utils
 const { catchAsync } = require("../tools/catchAsync");
@@ -45,6 +46,17 @@ const accommodationExistsById = catchAsync(async (req, res, next) => {
       },
       { model: User, attributes: ["id", "firstName", "lastName"] },
       { model: AccommodationImg },
+      {
+        model: Reservation,
+        include: [
+          {
+            model: User,
+            required: false,
+            where: { status: "active" },
+            attributes: ["id", "firstName", "lastName", "country"],
+          },
+        ],
+      },
     ],
   });
 

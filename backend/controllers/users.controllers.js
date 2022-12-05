@@ -34,6 +34,33 @@ const getAllReservations = catchAsync(async (req, res, next) => {
   });
 });
 
+const getAllAccommodationsByUser = catchAsync(async (req, res, next) => {
+  const { sessionUser } = req;
+
+  const accommodations = await Accommodation.findAll({
+    where: { userId: sessionUser.id, status: "active" },
+    required: false,
+    include: [
+      {
+        model: Reservation,
+        include: [
+          {
+            model: User,
+            required: false,
+            where: { status: "active" },
+            attributes: ["id", "firstName", "lastName", "country"],
+          },
+        ],
+      },
+    ],
+  });
+
+  res.status(200).json({
+    status: "success",
+    data: { accommodations },
+  });
+});
+
 const getReservationById = catchAsync(async (req, res, next) => {
   const { reservation } = req;
 
@@ -115,6 +142,7 @@ const login = catchAsync(async (req, res, next) => {
 
 module.exports = {
   getAllReservations,
+  getAllAccommodationsByUser,
   getReservationById,
   createUser,
   updateUser,
