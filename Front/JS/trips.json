@@ -8,6 +8,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200",
         "cantidad": 5
     },
@@ -19,6 +21,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200"
     },
     {
@@ -29,6 +33,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200",
         "cantidad": 5
     },
@@ -40,6 +46,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200",
         "cantidad": 5
     },
@@ -51,6 +59,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200",
         "cantidad": 5
     },
@@ -62,6 +72,8 @@
         "descripcion": "El mejor hotel de la zona",
         "comodidades": "Pileta, jacuzzi",
         "img": "/Front/Recursos/img/caption.jpg",
+        "img2": "/Front/Recursos/img/caption.jpg",
+        "img3": "/Front/Recursos/img/caption.jpg",
         "price" : "200",
         "cantidad": 5
     }
