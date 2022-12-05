@@ -3,6 +3,7 @@ const express = require("express");
 // Controllers
 const {
   getAllReservations,
+  getAllAccommodationsByUser,
   getReservationById,
   createUser,
   updateUser,
@@ -33,6 +34,7 @@ userRouter.use(protectSession);
 userRouter.patch("/:id", userExists, protectUsersAccount, updateUser);
 userRouter.delete("/:id", userExists, protectUsersAccount, deleteUser);
 userRouter.get("/reservations", getAllReservations);
+userRouter.get("/myaccommodations", getAllAccommodationsByUser);
 userRouter.get("/reservations/:id", reservationExistsById, getReservationById);
 
 module.exports = { userRouter };
