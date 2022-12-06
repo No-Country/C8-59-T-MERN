@@ -134,7 +134,7 @@ body{
     
     background-image:url(/Front/Recursos/Home/FondoH.jpg);
     background-position:center;
-    background-size: cover;
+    background-size:auto;
     display:flex;
     flex-direction:column;
     box-sizing: border-box;
@@ -426,12 +426,22 @@ font-family: 'Raleway', sans-serif;
 
   /* NOSOTROS */
 
+  #nosotros h1{
+    color:rgb(243, 242, 242);
+    font-size:3.5rem;
+    text-shadow: 1px 1px 5px rgb(121, 121, 121);
+    margin-top:50px;
+    
+  }
+
   #nosotros {
     display: flex;
     flex-direction: column;
     height: 100%;
     width:100%;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
     background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
    
   }
@@ -541,42 +551,6 @@ font-family: 'Raleway', sans-serif;
 
   
 
- /*RESPONSIVE TABLET*/
-
- @media(min-width:767px){
-   /*menu*/
-   #logo{
-    font-size:3rem;
-    padding-left:20px;
-  }
-   
-  #menu_off_canvas a{
-    text-decoration: none;
-    font-size:2rem;
-    padding:1px 3px 1px 3px;
-    width:80%;
-  }
-  
- 
-  
-  #card_off_canvas{
-    background: rgb(245, 12, 156);}
-  #card_off_canvas p{
-    color:rgb(255, 255, 255);
-    font-family: 'Raleway', sans-serif;
-    font-size:1.8rem;
-  }
-
-
-
-   
-
-  /*HOME*/
-   #Home h1{
-    font-size:8rem;
-   }
- }
-
 
  /* PAGINA NOSOTROS 
  IMAGEN DE FONDO */
@@ -634,3 +608,80 @@ font-family: 'Raleway', sans-serif;
 }
 
 
+
+
+/*INICIO DE RESPONSIVE*/
+
+
+
+
+ /*RESPONSIVE TABLET*/
+
+ @media(min-width:767px){
+  /*menu*/
+  #logo{
+   font-size:3rem;
+   padding-left:20px;
+ }
+  
+ #menu_off_canvas a{
+   text-decoration: none;
+   font-size:2rem;
+   padding:1px 3px 1px 3px;
+   width:80%;
+ }
+ 
+
+ 
+ #card_off_canvas{
+   background: rgb(245, 12, 156);}
+ #card_off_canvas p{
+   color:rgb(255, 255, 255);
+   font-family: 'Raleway', sans-serif;
+   font-size:1.8rem;
+ }
+
+  
+
+ /*HOME*/
+  #Home h1{
+   font-size:8rem;
+  }
+}
+
+
+ /*RESPONSIVE DESKTIO*/
+
+ @media(min-width:1025px){
+  /*menu*/
+  #logo{
+   font-size:2rem;
+   padding-left:20px;
+ }
+  
+ #menu_off_canvas a{
+   text-decoration: none;
+   font-size:1rem;
+   padding:1px 3px 1px 3px;
+   width:30%;
+ }
+ 
+ #offcanvasExample {
+  width: 30%;
+}
+ 
+ #card_off_canvas{
+   background: rgb(245, 12, 156);}
+ #card_off_canvas p{
+   color:rgb(255, 255, 255);
+   font-family: 'Raleway', sans-serif;
+   font-size:1.8rem;
+ }
+
+  
+
+ /*HOME*/
+  #Home h1{
+   font-size:5rem;
+  }
+}

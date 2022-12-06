@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+body {
+	background: #f9f9f9;
+	font-family: "roboto", sans-serif;
+}
+
+.main-content {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.text-striked {
+	text-decoration: line-through;
+}
+
+.shadow {
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+}
+
+.hotel-card .hotel-card_images {
+	flex: 2;
+}
+.hotel-card .hotel-card_images .carousel-item img {
+	height: 250px;
+	object-fit: cover;
+}
+@media (min-width: 992px) {
+	.hotel-card .hotel-card_images .carousel-item img {
+		height: 100%;
+	}
+}
+
+.hotel-card .hotel-card_info {
+	flex: 3;
+}
+
+.hotel-card .amnities img {
+	max-height: 20px;
+}
+
+.hotel-card .hotel-checklist {
+	list-style-type: none;
+}
+
+.carousel .carousel-control-prev {
+	background: linear-gradient(to right, #333333bb, #33333300);
+}
+
+.carousel .carousel-control-next {
+	background: linear-gradient(to left, #333333bb, #33333300);
+}
+
+
+.filtro{
+	display:none;
+}
+
+
+#viajes-search{
+	box-sizing:border-box;
+
+}
+.row{
+	justify-content: center;
+}
