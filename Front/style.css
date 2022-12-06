@@ -426,12 +426,22 @@ font-family: 'Raleway', sans-serif;
 
   /* NOSOTROS */
 
+  #nosotros h1{
+    color:rgb(243, 242, 242);
+    font-size:3.5rem;
+    text-shadow: 1px 1px 5px rgb(121, 121, 121);
+    margin-top:50px;
+    
+  }
+
   #nosotros {
     display: flex;
     flex-direction: column;
     height: 100%;
     width:100%;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
     background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
    
   }
