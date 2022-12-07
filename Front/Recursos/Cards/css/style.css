@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+.filtro{
+	display:none;
+}
+.row{
+	justify-content: center;
+}
+
 body {
 	background: #f9f9f9;
 	font-family: "roboto", sans-serif;
@@ -51,15 +58,9 @@ body {
 }
 
 
-.filtro{
-	display:none;
-}
 
 
 #viajes-search{
 	box-sizing:border-box;
 
-}
-.row{
-	justify-content: center;
 }

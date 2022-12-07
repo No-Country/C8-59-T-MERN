@@ -48,7 +48,7 @@ const showTrips = (miArray) => {
           <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
           <link rel="stylesheet" href="/Front/Recursos/Cards/css/style.css">
           
-          <div id="viajes-search" class="container filtro" style="
+          <div id="viajes-search" class="filtro container " style="
           padding-top: 10px;
           padding-bottom: 10px;
       ">
@@ -106,7 +106,7 @@ const showTrips = (miArray) => {
                         <h3>$ ${el.price}</h3>
                         <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+  Ver Disponibilidad
 </button>
                       </div>
                     </div>
@@ -137,7 +137,7 @@ const showTrips = (miArray) => {
 
 //Buscador
 
-document.addEventListener("keyup", e=>{
+document.addEventListener("keydown", e=>{
 
   if (e.target.matches("#search")){
 
