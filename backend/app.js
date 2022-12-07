@@ -2,6 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
+const cors = require("cors");
 
 //Routers
 const { accommodationRouter } = require("./routes/accommodations.routes");
@@ -16,6 +17,9 @@ const app = express();
 
 // Enable Express app to receive JSON data
 app.use(express.json());
+
+// Enable cors
+app.use(cors());
 
 // Add security headers
 app.use(helmet());
