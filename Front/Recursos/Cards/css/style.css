@@ -3,7 +3,7 @@
 	display:none;
 }
 .row{
-	justify-content: center;
+	justify-content: center !important;
 }
 
 body {

@@ -52,20 +52,20 @@ const showTrips = (miArray) => {
           padding-top: 10px;
           padding-bottom: 10px;
       ">
-            <div class="row">
+            <div style="justify-content: center "class="row">
               <div class="col-sm-9 col-md-9 ">
                 <div class="hotel-card bg-white rounded-lg shadow overflow-hidden d-block d-lg-flex">
                   <div class="hotel-card_images">
                     <div id="bootstrapCarousel" class="carousel slide h-100" data-ride="carousel">
                       <div class="carousel-inner h-100">
                         <div class="carousel-item h-100 active">
-                          <img src="${el.accommodationImgs[0].imgUrl[0]}" class="d-block w-100" alt="Hotel Image">
+                          <img src="/Front/Recursos/Cards/hotel1.jpg" class="d-block w-100" alt="Hotel Image">
                         </div>
                         <div class="carousel-item h-100">
-                          <img src="${el.accommodationImgs[1]}" class="d-block w-100" alt="Hotel Image">
+                          <img src="/Front/Recursos/Cards/hotel2.jpg" class="d-block w-100" alt="Hotel Image">
                         </div>
                         <div class="carousel-item h-100">
-                          <img src="${el.accommodationImgs[2]}" class="d-block w-100" alt="Hotel Image">
+                          <img src="/Front/Recursos/Cards/hotel3.jpg" class="d-block w-100" alt="Hotel Image">
                         </div>
                       </div>
                       <a class="carousel-control-prev" href="#bootstrapCarousel" role="button" data-slide="prev">
@@ -106,8 +106,30 @@ const showTrips = (miArray) => {
                         <h3>$ ${el.price}</h3>
                         <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Ver Disponibilidad
+  Ver Disponibilida
 </button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">
+          id="titulo"
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
                       </div>
                     </div>
                   </div>
