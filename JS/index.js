@@ -19,14 +19,11 @@ fetch("https://viaggio.up.railway.app/api/v1/accommodations", requestOptions)
   .then(result => {
     const datos =(JSON.parse(result))
    const datos2 = (datos.data.accommodations)
-   console.log(datos2)
    datos2.forEach(e => {
     allTrips.push(e)
 });
 showTrips(allTrips)
   })
- 
-  .catch(error => console.log('error', error));
 
 
 const cardContainer = document.querySelector(".card-container")
@@ -99,7 +96,7 @@ const showTrips = (miArray) => {
                           <img class="mr-2" src="/Front/Recursos/Cards/icons/wifi.svg" data-toggle="tooltip" data-placement="top" title="Wifi" alt="Wifi">
                         </div>
                         <ul class="hotel-checklist pl-0 mb-0">
-                          <li><i class="fa fa-check text-success"></i> ${el.reviews[0].content}</li>
+                          <li><i class="fa fa-check text-success"></i> ${el.reviews[0]}</li>
                         </ul>
                       </div>
                       <div class="hotel-card_pricing text-center">
