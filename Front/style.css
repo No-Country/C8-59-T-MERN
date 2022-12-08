@@ -24,6 +24,7 @@ body{
 }
 
 
+
 #offcanvasExample{
   width:60%;
 }
@@ -741,3 +742,108 @@ font-family: 'Raleway', sans-serif;
    font-size:5rem;
   }
 }
+
+
+/* Pagina de reserva */
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+body {
+    background-color: #9C27B0
+}
+
+.container-card {
+  margin-top: 100px;
+}
+
+.rating {
+    position: relative;
+    display: flex;
+    width: 2.875rem;
+    height: 2.875rem;
+    margin-top: -1.75rem;
+    margin-left: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    border: .25rem solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rebeccapurple
+}
+
+.image {
+    max-width: 100%
+}
+
+.card {
+   
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: .25rem
+}
+
+.card-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    color: #653399
+}
+
+.card-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px
+}
+
+.marker {
+    color: red
+}
+
+.star-rating {
+    color: #f7b944
+}
+
+
+.boton-reserva {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+  color: white;
+  border-radius: 10%;
+}
+
+.boton-reserva h2 {
+text-align: center;
+margin-top: 1rem;
+font-weight: 800;
+text-transform: uppercase;
+}
+
+.descripcion {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descripcion div {
+  width: 70%
+  ;
+  text-align: center;
+
+}
+
+.descripcion div h3 {
+  font-weight: 800;
+}
+

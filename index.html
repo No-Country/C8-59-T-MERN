@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Front/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link href="https://www.1001fonts.com/feallico-font.html?text=%C2%BFViajas%3F">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>viaggio</title>
+  </head>
+  <body>
+ 
+ 
+ 
+    <!--NavBar-->
+    <section id="menu">
+    <a id="logo"class="text-start" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        viaggio
+      </a>
+ 
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">viaggio®</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div id="menu_off_canvas">
+           <ul>
+            <li><a  href="#Home" >Home</a></li>
+            <li><a  href="#Home">Buscar alojamiento</a></li>
+            <li><a  href="#Home">Sumar mi alojamiento</a></li>
+            <li><a  href="nosotros.html">Nosotros</a></li>
+            <li><a  href="contacto.html">Contacto</a></li>
+        </ul>
+          </div>
+
+          <div id="card_off_canvasarg"class="card" style="width: auto;">
+            <div class="card-body">
+              <p class="card-text text-center">VIAJA A <br>ALENTAR <br>A TU <br>SELECCIÓN</p> 
+            </div>
+          </div>
+          <div id="card_off_canvas"class="card" style="width: auto;">
+          <div class="card-body">
+            <p class="card-text text-center">MIRA <br>NUESTRAS <br>PROMOS</p> 
+          </div>
+        </div>
+        </div>
+        
+
+      </div>
+    </section>
+<!--comentario 2-->
+<!--comentario-->
+<!--Inicio Home-->
+
+    <section id="Home" >
+       <!-- <h1>viaggio</h1>-->
+       <div id="textohome">
+    <h1>¿Viajas?</h1>
+    <h2>Sabemos donde alojarte</h2></div>
+  <img src="/Front/Recursos/Home/FondoH.jpg" class="imagen-fondo">
+
+<form  id="FormdestinoHome">
+    <div class="search">
+        <input id="search" type="text" class="search__input"   placeholder="Buscar mi proximo hospedaje...">
+        <button class="search__button">
+            <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
+   <div id="fechas">
+    <input id="desde" type="date">
+    <input id="hasta" type="date">
+  </div>
+</form>
+
+<!--Search Card-->
+<div style="z-index:0;" id="search-card" class="card-container d-flex justify-content-evenly align-items-center flex-wrap "></div>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header flex-column">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1 class="modal-title fs-5" style=" color:white;
+        font-family: 'Raleway', sans-serif;
+        font-size:2rem;
+        background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+        width:100%;
+        margin-top:0!important;">H21 Hospedaje</h1>
+        <div class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> México, Ciudad de México</div>
+        <img class="img-fluid" src="/Front/Recursos/Cards/hotel3.jpg">
+
+        
+      </div>
+      <div class="modal-body">
+        <p>El H21 Hospedaje Boutique se encuentra en Ciudad de México, a 800 metros de la Casa Museo Frida Kahlo, y ofrece alojamiento con WiFi gratuita y aparcamiento privado gratuito. </p>
+        <div class="hotel-checklist pl-0 mb-0 flex-column ">
+          <p><i class="fa fa-check text-success"></i>Desayuno Incluido</p>
+            <p><i class="fa fa-check text-success"></i> Late checkout</p>
+            <p><i class="fa fa-check text-success"></i>Wifi</p>
+            <p><i class="fa fa-check text-success"></i>Estacionamiento gratis</p>
+        </div>  
+      <div class="modal-footer">  
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Buscando</button>
+        <a type="button" href="/reservas.html" class="btn btn-primary">Reservar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Fin Home-->
+
+<!-- Destinos--> 
+<section id="Destinos" class="container-fluid fotos--destinos">
+
+  <h2 class="text-center destinos">#BLACK DESTINYS</h2>
+   <!--Galeria Version Mobile y tables--->
+   <div id="fotos-destinos" class="container d-md-none">
+    <div class="text-center margin-40px-bottom">
+    </div>
+            <div class="row margin-30px-bottom">
+                <div class="xs-margin-30px-bottom">
+                    <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/02.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/torre-belem-noche-lisboa-portugal_268835-1325.jpg?w=900&t=st=1669307769~exp=1669308369~hmac=d9d28527b5227df4123c47d29e393073276b731bf4d87ab5c5c2fd0ab1861a46); width:100%;">
+                        <div class="mt-auto position-relative z-index-9">
+                            <h5 class="text-white">Portugal</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 xs-margin-30px-bottom">
+                    <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/03.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/placa-ajuntament-valencia-espana_1398-2381.jpg?w=900&t=st=1669307853~exp=1669308453~hmac=bccc226d0372a506c090592e0534c6c581d4bb227e2948cd1e7381f82931c869);width:100%; margin-top:10px;">
+                        <div class="mt-auto position-relative z-index-9">
+                            <h5 class="text-white">España</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/04.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/interior-esculturas-faraones-templo-abu-simbel-sur-egipto_242111-17367.jpg?w=900&t=st=1669307993~exp=1669308593~hmac=4a94c3270156f58e731339d5e6358b0d3d06ba031b0349fa0e0879572c3fc0dc);width:100%;margin-top:10px;">
+                        <div class="mt-auto position-relative z-index-9">
+                            <h5 class="text-white">Egipto</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+</div>
+
+
+
+
+    <!--Galeria Desktop Version-->
+  <div id="fotos-destinos" class="container d-none d-md-block">
+      <div class="text-center margin-40px-bottom">
+      </div>
+      <div class="row">
+          <div class="col-lg-3 sm-margin-30px-bottom">
+              <div class="h-100">
+                  <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4 h-100" style="background-image: url(https://img.freepik.com/foto-gratis/torre-eiffel-paris-hermosos-colores-otono_268835-828.jpg?w=740&t=st=1669307377~exp=1669307977~hmac=3900417428748ba7a609d67f024dbd2dcbe60e7f846cbbe6a4268056d035b44b);">
+                      <div class="mt-auto position-relative z-index-9">
+                          <h5 class="text-white">París</h5>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-9">
+              <div class="row margin-30px-bottom">
+                  <div class="col-md-4 xs-margin-30px-bottom">
+                      <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/02.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/torre-belem-noche-lisboa-portugal_268835-1325.jpg?w=900&t=st=1669307769~exp=1669308369~hmac=d9d28527b5227df4123c47d29e393073276b731bf4d87ab5c5c2fd0ab1861a46);">
+                          <div class="mt-auto position-relative z-index-9">
+                              <h5 class="text-white">Portugal</h5>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-4 xs-margin-30px-bottom">
+                      <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/03.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/placa-ajuntament-valencia-espana_1398-2381.jpg?w=900&t=st=1669307853~exp=1669308453~hmac=bccc226d0372a506c090592e0534c6c581d4bb227e2948cd1e7381f82931c869);">
+                          <div class="mt-auto position-relative z-index-9">
+                              <h5 class="text-white">España</h5>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/04.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/interior-esculturas-faraones-templo-abu-simbel-sur-egipto_242111-17367.jpg?w=900&t=st=1669307993~exp=1669308593~hmac=4a94c3270156f58e731339d5e6358b0d3d06ba031b0349fa0e0879572c3fc0dc);">
+                          <div class="mt-auto position-relative z-index-9">
+                              <h5 class="text-white">Egipto</h5>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-7 xs-margin-30px-bottom">
+                      <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/05.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/hermosa-vista-aerea-zona-mar-muerto-israel_181624-61581.jpg?w=900&t=st=1669308113~exp=1669308713~hmac=a93f06c15991be8b00107db2e5735b14fb5c40223a8c68997386baf4c1bd4c96);">
+                          <div class="mt-auto position-relative z-index-9">
+                              <h5 class="text-white">Israel</h5>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-5">
+                      <a href="" loading="lazy" class="card bg-img box-hover cover-background border-0 p-4" data-background="img/content/06.jpg" style="background-image: url(https://img.freepik.com/foto-gratis/foto-escenica-carrauntoohil-peninsula-iveragh-condado-kerry-irlanda_181624-29611.jpg?w=900&t=st=1669308217~exp=1669308817~hmac=7b2f9b3e5c603fe47013e463f3440bd636d229ccaea87fee8a5f1cdfa14c6587);">
+                          <div class="mt-auto position-relative z-index-9">
+                              <h5 class="text-white">Irlanda</h5>
+                          </div>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Preguntas Frecuentes -->
+
+
+<!--Section: FAQ-->
+<section class="conteiner-faq text-tres">
+  <h3 class="text-center mb-4 pb-2 text-primary fw-bold destinos ">Preguntas Frecuentes</h3>
+  
+
+  <div class="row">
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
+        question?</h6>
+      <p>
+        <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
+        your
+        safety and
+        security. All billing information is stored on our payment processing partner.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
+        that
+        is longer then the previous one?</h6>
+      <p>
+        <strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
+        your
+        account. Once the subscription is
+        cancelled, you will not be charged next month.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
+        question?
+      </h6>
+      <p>
+        Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
+        account at any time with no further obligation.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
+        question?
+      </h6>
+      <p>
+        Yes. Go to the billing section of your dashboard and update your payment information.
+      </p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
+        question?
+      </h6>
+      <p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
+        reason.</p>
+    </div>
+
+    <div class="col-md-6 col-lg-4 mb-4 text-seis">
+      <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Another
+        question that is longer than usual</h6>
+      <p>
+        Of course! We’re happy to offer a free plan to anyone who wants to try our service.
+      </p>
+    </div>
+  </div>
+</section>
+<!--Section: FAQ-->
+
+<!-- Contacto -->
+
+
+
+
+  <footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4 container--redes">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="#!"
+          role="button"
+          ><em class="fab fa-facebook-f"></em
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          role="button"
+          href=""
+          
+          ><em class="fab fa-twitter"></></a>
+        
+  
+        <!-- Google -->
+      
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="#"
+          role="button" >
+        </a>
+        
+  
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href=""
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+      
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" >
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">C8-59-t-Mern No Country</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="JS/index.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+<!-- FOOTER -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
+></script>
+
+
+
+
+    
+  </body>
+
+
+</html>
+

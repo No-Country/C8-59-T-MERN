@@ -9,7 +9,6 @@ body{
   background-color: #1d1a1a;
 }
 
-
 /* START MENU */
 #logo{
   text-decoration: none;
@@ -22,6 +21,7 @@ body{
   width:100%;
   padding-left:10px;
 }
+
 
 
 #offcanvasExample{
@@ -124,8 +124,6 @@ body{
 
 
 /*END MENU*/
-
-
 
 /*START HOME*/
 

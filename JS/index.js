@@ -80,7 +80,7 @@ const showTrips = (miArray) => {
                   </div>
                   <div class="hotel-card_info p-4">
                     <div class="d-flex align-items-center mb-2">
-                    <div "class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> ${el.city}, ${el.country}
+                    <div class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> ${el.city}, ${el.country}
                     <h5 class="mb-0 mr-2">${el.title}</h5>
                     </div>
 
@@ -105,32 +105,10 @@ const showTrips = (miArray) => {
                       <div class="hotel-card_pricing text-center">
                         <h3>$ ${el.price}</h3>
                         <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Ver Disponibilida
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnmodal">
+  Ver+
 </button>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">
-          id="titulo"
-        </h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-                      </div>
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -156,7 +134,6 @@ const showTrips = (miArray) => {
 };
 
 
-
 //Buscador
 
 document.addEventListener("keydown", e=>{
@@ -174,6 +151,9 @@ document.addEventListener("keydown", e=>{
            
   }
 })
+
+
+
   
  
 
