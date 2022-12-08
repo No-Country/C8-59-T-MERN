@@ -4,15 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Front/style.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
-    <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
-  rel="stylesheet"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link href="https://www.1001fonts.com/feallico-font.html?text=%C2%BFViajas%3F">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <title>viaggio</title>
   </head>
   <body>
@@ -35,33 +35,40 @@
             <li><a  href="#Home" >Home</a></li>
             <li><a  href="#Home">Buscar alojamiento</a></li>
             <li><a  href="#Home">Sumar mi alojamiento</a></li>
-            <li><a  href="#nosotros">Nosotros</a></li>
-            <li><a  href="#contacto">Contacto</a></li>
+            <li><a  href="/Front/nosotros.html">Nosotros</a></li>
+            <li><a  href="contacto.html">Contacto</a></li>
         </ul>
           </div>
 
-          <div id="card_off_canvas"class="card" style="width: auto;">
+          <div id="card_off_canvasarg"class="card" style="width: auto;">
             <div class="card-body">
-              <p class="card-text text-center">APROVECHA <br>NUESTRAS<br> EXCELENTES <br>PROMOS</p>
+              <p class="card-text text-center">VIAJA A <br>ALENTAR <br>A TU <br>SELECCIÓN</p> 
             </div>
           </div>
+          <div id="card_off_canvas"class="card" style="width: auto;">
+          <div class="card-body">
+            <p class="card-text text-center">MIRA <br>NUESTRAS <br>PROMOS</p> 
+          </div>
+        </div>
         </div>
         
 
       </div>
     </section>
-
-
+<!--comentario 2-->
+<!--comentario-->
 <!--Inicio Home-->
 
     <section id="Home" >
        <!-- <h1>viaggio</h1>-->
+       <div id="textohome">
     <h1>¿Viajas?</h1>
-   <img src="/Front/Recursos/Home/FondoH.jpg">
+    <h2>Sabemos donde alojarte</h2></div>
+  <img src="/Front/Recursos/Home/FondoH.jpg" class="imagen-fondo">
 
-<form id="FormdestinoHome">
+<form  id="FormdestinoHome">
     <div class="search">
-        <input type="text" class="search__input" placeholder="Sabemos donde alojarte...">
+        <input id="search" type="text" class="search__input"   placeholder="Buscar mi proximo hospedaje...">
         <button class="search__button">
             <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
                 <g>
@@ -70,23 +77,57 @@
             </svg>
         </button>
     </div>
-
-    <!--<input id="desde" type="date">
-    <input id="hasta" type="date">-->
+   <div id="fechas">
+    <input id="desde" type="date">
+    <input id="hasta" type="date">
+  </div>
 </form>
 
+<!--Search Card-->
+<div style="z-index:0;" id="search-card" class="card-container d-flex justify-content-evenly align-items-center flex-wrap "></div>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header flex-column">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h1 class="modal-title fs-5" style=" color:white;
+        font-family: 'Raleway', sans-serif;
+        font-size:2rem;
+        background: linear-gradient(45deg,  #b22cff, #7285c0, #ca30b5);
+        width:100%;
+        margin-top:0!important;">H21 Hospedaje</h1>
+        <div class="text-muted mb-2"><i class="fas fa-map-marker-alt"></i> México, Ciudad de México</div>
+        <img class="img-fluid" src="/Front/Recursos/Cards/hotel3.jpg">
+
+        
+      </div>
+      <div class="modal-body">
+        <p>El H21 Hospedaje Boutique se encuentra en Ciudad de México, a 800 metros de la Casa Museo Frida Kahlo, y ofrece alojamiento con WiFi gratuita y aparcamiento privado gratuito. </p>
+        <div class="hotel-checklist pl-0 mb-0 flex-column ">
+          <p><i class="fa fa-check text-success"></i>Desayuno Incluido</p>
+            <p><i class="fa fa-check text-success"></i> Late checkout</p>
+            <p><i class="fa fa-check text-success"></i>Wifi</p>
+            <p><i class="fa fa-check text-success"></i>Estacionamiento gratis</p>
+        </div>  
+      <div class="modal-footer">  
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir Buscando</button>
+        <a type="button" href="/reservas.html" class="btn btn-primary">Reservar</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  <!-- <div id="search-card" class="card-container"></div>-->
-</section>
 <!--Fin Home-->
 
 <!-- Destinos--> 
-<section id="Destinos" class="container fotos--destinos">
+<section id="Destinos" class="container-fluid fotos--destinos">
 
   <h2 class="text-center destinos">#BLACK DESTINYS</h2>
    <!--Galeria Version Mobile y tables--->
-   <div id="fotos-destinos" class="container d-lg-none">
+   <div id="fotos-destinos" class="container d-md-none">
     <div class="text-center margin-40px-bottom">
     </div>
             <div class="row margin-30px-bottom">
@@ -118,9 +159,8 @@
 
 
     <!--Galeria Desktop Version-->
-  <div id="fotos-destinos" class="container d-none d-lg-block">
+  <div id="fotos-destinos" class="container d-none d-md-block">
       <div class="text-center margin-40px-bottom">
-          <h3 class="no-margin-bottom destinos">Destinos</h3>
       </div>
       <div class="row">
           <div class="col-lg-3 sm-margin-30px-bottom">
@@ -179,39 +219,7 @@
 
 
 
-<section id="nosotros">
 
-<!-- quienes somos -->
-
-  <div class="nosotros--contenedor">
-    <div class="contenedor--titulo">
-      <h2 class="titulo">¿Quienes somos?</h2>
-    </div>
-    <div class="contenedor--parrafo">
-      <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia consectetur repellat sit ducimus ea maiores vero tempora explicabo corporis praesentium ullam, ut nemo sapiente commodi tenetur, doloribus iste dolore. Accusantium.</p>
-   </div>
-</div>
-
-<!-- porque elegirnos -->
-<div class="nosotros--contenedor">
-  <div class="contenedor--titulo">
-    <h2 class="titulo">¿Por que elegirnos?</h2>
-  </div>
-  <div class="contenedor--parrafo">
-    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia consectetur repellat sit ducimus ea maiores vero tempora explicabo corporis praesentium ullam, ut nemo sapiente commodi tenetur, doloribus iste dolore. Accusantium.</p>
- </div>
-</div>
-<!-- Seguridad -->
-<div class="nosotros--contenedor">
-  <div class="contenedor--titulo">
-    <h2 class="titulo">Seguridad</h2>
-  </div>
-  <div class="contenedor--parrafo">
-    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia consectetur repellat sit ducimus ea maiores vero tempora explicabo corporis praesentium ullam, ut nemo sapiente commodi tenetur, doloribus iste dolore. Accusantium.</p>
- </div>
-</div>
-
-</section>
 
 
 
@@ -286,23 +294,7 @@
 <!--Section: FAQ-->
 
 <!-- Contacto -->
-<section id="contacto">
-  <h2 class="contacto--titulo">Contacto</h2>
-<div class="contacto">
-  <div class="mb-3 w-50">
-  <label for="exampleFormControlInput1" class="form-label ">Dirección de correo electrónico</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3 h-100">
-  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-</div>
-<!-- SUBMIT -->
 
-<button type="button" class="btn btn-primary buttom-submmit">Enviar</button>
-
-</section>
 
 
 
@@ -337,16 +329,16 @@
         <a
           class="btn text-white btn-floating m-1"
           style="background-color: #ac2bac;"
-          href="#!"
-          role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
+          href="#"
+          role="button" >
+        </a>
+        
   
         <!-- Linkedin -->
         <a
           class="btn text-white btn-floating m-1"
           style="background-color: #0082ca;"
-          href="#!"
+          href=""
           role="button"
           ><i class="fab fa-linkedin-in"></i
         ></a>
@@ -371,7 +363,7 @@
     <script src="JS/index.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    
 <!-- FOOTER -->
 <script
   type="text/javascript"
@@ -387,20 +379,3 @@
 
 </html>
 
-
-<div id="viajes-search" class="card">
-  <div class="card-img"></div>
-  <div class="card-info">
-    <p class="text-title">${el.city} </p>
-    <p class="text-body">${el.country}</p>
-  </div>
-  <div class="card-footer">
-  <span class="text-title">$499.49</span>
-  <div class="card-button">
-    <svg class="svg-icon" viewBox="0 0 20 20">
-      <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
-      <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
-      <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
-    </svg>
-  </div>
-  </div></div>
