@@ -1,18 +1,38 @@
-# Participantes de este proyecto
+  # Viaggio
+  > Es una aplicación que le permite al usuario poder buscar y reservas los hospedajes de forma sencilla.-
 
-## Front-end
+ ## Participantes de este proyecto
+
+### Front-end
 
     1. Alan Figueroa
     2. Mauro Ciappina
     3. Agustin Ramirez
     4. Ricardo Tortolero
 
-## Back-end
+### Back-end
 
     1. Miguel Vera Perez
     2. Fátima Vázquez
-    3. ...
 
-## UX-UI
 
-    1. example
+## Deploy
+
+### Front Deploy
+   https://viaggio-c859tmern.netlify.app/
+
+ ### End Points Back / Documentacion API
+  https://documenter.getpostman.com/view/22441784/2s8YzMXQrC
+  
+ ## Stacks y herramientas
+ 
+ ### Front
+ - HTML5 y CSS3
+* Bootstrap
++ Javascript/Json
+
+ ### Back
+  - 
+* 
++ 
+
