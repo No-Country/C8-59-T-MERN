@@ -1,22 +1,23 @@
-  # Viaggio
-  > Es una aplicación que le permite al usuario poder buscar y reservas los hospedajes de forma sencilla.-
+  # Viaggio ✈️
+  > Es una aplicación que le permite al usuario poder buscar y reservas los hospedajes de forma sencilla.
+  ### Prototype Video 👉 https://drive.google.com/file/d/1OObdP6rFNitwKAR1NTgVbNf58qCRbJQ-/view?usp=sharing
 
  ## Participantes de este proyecto
 
-### Front-end
+### Front-end 👇
 
     1. Alan Figueroa
     2. Mauro Ciappina
     3. Agustin Ramirez
     4. Ricardo Tortolero
 
-### Back-end
+### Back-end 👇
 
     1. Miguel Vera Perez
     2. Fátima Vázquez
 
 
-## Deploy
+## Deploy  🙌
 
 ### Front Deploy
    https://viaggio-c859tmern.netlify.app/
