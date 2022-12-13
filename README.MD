@@ -33,7 +33,9 @@
 + Javascript/Json
 
  ### Back
-  - 
-* 
-+ 
+- Express.js 
+* PostgreSQL
++ Postman
+- Sequelize
++ Firebase
 
